@@ -3,9 +3,9 @@
   :url "http://example.com/FIXME"
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
+                 [org.clojure/tools.logging "0.4.0"]
                  [compojure "1.5.1"]
-                 [ring/ring-defaults "0.2.1"]
-                 [clj-log "0.4.6"]]
+                 [ring/ring-defaults "0.2.1"]]
   :plugins [[lein-ring "0.9.7"]]
   :ring {:handler compojure-docker-test.handler/app}
   :profiles

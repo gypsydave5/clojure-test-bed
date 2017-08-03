@@ -2,7 +2,8 @@
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
-            [clojure.tools.logging :as log]))
+            [clojure.tools.logging :as log]
+            [compojure-docker-test.rabbit]))
 
 (defroutes app-routes
   (GET "/" [] "Hello World")
